@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Adventure Amusement Park - Book Tickets</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Welcome to Fun Adventure Amusement Park</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="park-info.html">Park Info</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/rollercoaster.jpg" class="d-block w-100" alt="Roller Coaster">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Roller Coaster</h5>
+                    <p>Experience the thrill of our high-speed roller coaster!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/waterslide.jpg" class="d-block w-100" alt="Water Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Water Slide</h5>
+                    <p>Cool off with our exciting water slide adventure.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/ferriswheel.jpg" class="d-block w-100" alt="Ferris Wheel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ferris Wheel</h5>
+                    <p>Enjoy panoramic views from our towering Ferris wheel.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Ticket Booking Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Book Your Tickets</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/adultticket.jpg" class="card-img-top" alt="Adult Ticket">
+                    <div class="card-body">
+                        <h5 class="card-title">Adult Ticket</h5>
+                        <p class="card-text">Access to all attractions for one day.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketModal" data-ticket-type="Adult">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/childticket.jpg" class="card-img-top" alt="Child Ticket">
+                    <div class="card-body">
+                        <h5 class="card-title">Child Ticket</h5>
+                        <p class="card-text">Access to all attractions for children under 12.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketModal" data-ticket-type="Child">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/familyticket.jpg" class="card-img-top" alt="Family Ticket">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Ticket</h5>
+                        <p class="card-text">Special package for 2 adults and 2 children.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketModal" data-ticket-type="Family">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ticketModalLabel">Ticket Booking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ticketType" class="form-label">Ticket Type</label>
+                            <input type="text" class="form-control" id="ticketType" readonly>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fun Adventure Amusement Park. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
