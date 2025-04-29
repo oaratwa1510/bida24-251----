@@ -1,0 +1,78 @@
+/* Container that holds the whole page */
+body {
+    font-family: sans-serif, Arial;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    list-style: none;
+    box-sizing: border-box;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full height */
+}
+
+/* Fixed navigation bar on the left */
+.nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Fixed width for the navigation bar */
+    background-color: #18126a;
+    height: 100vh; /* Full viewport height */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+/* Navigation links */
+.nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    background-color: brown;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 220px; /* Ensure content is not hidden behind the nav */
+    padding: 20px;
+    flex-grow: 1; /* Allow content area to grow and take remaining space */
+}
+
+/* Grid container for images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between grid items */
+}
+
+/* Grid item styling */
+.grid-item img {
+    width: 100%; /* Makes the image fill its grid cell */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Prevents extra space below the image */
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #18126a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
