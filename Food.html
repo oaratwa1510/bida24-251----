@@ -1,99 +1,139 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Adventure Amusement Park</title>
+    <title>Fun Adventure Amusement Park - Food & Refreshments</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h2>Menu</h2>
+        <h1>Fun Adventure Amusement Park</h1>
+        <h2>Food & Refreshments</h2>
     </header>
-    <nav>
+
+    <nav class="nav">
         <ul>
-            <li> <a href="index.html">Home |</a> </li>
-            <li> <a href="park-info.html">Park Info |</a> </li>
-            <li> <a href="activities.html">Activities |</a> </li>
-            <li> <a href="food.html">Food |</a></li>
-            <li> <a href="contact.html">Contact Us |</a> </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="park-info.html">Park Info</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="Feedback.html">Feedback</a></li> 
         </ul>
     </nav>
+
     <main>
-        <section id="grid-container"> 
-            <div class="food-page content">
-                <h1>Food Menu</h1>
-            </div>
-            <!-- Food Items -->
-            <div class="grid-item">
-                <h3>Burger and Chips</h3>
-                <img src="images/burger-and-chips.jpg" alt="food 1">
-            </div>
-            <div class="grid-item">
-                <h3>Hot Dog</h3>
-                <img src="images/hotdog.jpg" alt="food 2">
-            </div>
-            <div class="grid-item">
-                <h3>Pizza</h3>
-                <img src="images/pizza.jpg" alt="food 3">
-            </div>
-            <div class="grid-item">
-                <h3>Tacos</h3>
-                <img src="images/tacos.jpg" alt="food 4">
-            </div>
-            <div class="grid-item">
-                <h3>Muffins</h3>
-                <img src="images/muffins.jpg" alt="food 5">
-            </div>
-            <div class="grid-item">
-                <h3>Doughnuts</h3>
-                <img src="images/doughnuts.jpg" alt="food 6">
-            </div>
-            <div class="food-page content">
-                <h1>Snack Menu</h1>
-            </div>
-            <!-- Snack Items -->
-            <div class="grid-item">
-                <h3>Candy Floss</h3>
-                <img src="images/candy-floss.jpg" alt="snack 1">
-            </div>
-            <div class="grid-item">
-                <h3>Sweet Treats</h3>
-                <img src="images/sweet-treats.jpg" alt="snack 2">
-            </div>
-            <div class="grid-item">
-                <h3>Popcorn</h3>
-                <img src="images/popcorn.jpg" alt="snack 3">
-            </div>
-            <div class="grid-item">
-                <h3>Candy</h3>
-                <img src="images/candy.jpg" alt="snack 4">
-            </div>
-            <div class="grid-item">
-                <h3>Ice-Cream</h3>
-                <img src="images/ice-cream.jpg" alt="snack 5">
-            </div>
-            <div class="food-page content">
-                <h1>Refreshments</h1>
-            </div>
-            <!-- Refreshment Items -->
-            <div class="grid-item">
-                <h3>Lemonade</h3>
-                <img src="images/lemonade.jpg" alt="refreshment 1">
-            </div>
-            <div class="grid-item">
-                <h3>Drinks</h3>
-                <img src="images/drinks.jpg" alt="refreshment 2">
-            </div>
-            <div class="grid-item">
-                <h3>Rainbow Slushies</h3>
-                <img src="images/rainbow-slushies.jpg" alt="refreshment 3">
-            </div>
-            <div class="grid-item">
-                <h3>Coffee</h3>
-                <img src="images/coffee.jpg" alt="refreshment 4">
+        <!-- Food Menu -->
+        <section class="food-section">
+            <h2>Main Food Menu</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Burger and Chips</h3>
+                    <img src="images/burger-and-chips.jpg" alt="Burger and fries combo">
+                    <p>Juicy grilled burger served with crispy golden fries.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Hot Dog</h3>
+                    <img src="images/hotdog.jpg" alt="Classic hot dog">
+                    <p>Traditional hot dog with ketchup and mustard on a soft bun.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Pizza</h3>
+                    <img src="images/pizza.jpg" alt="Cheese pizza">
+                    <p>Freshly baked pizza with a variety of toppings.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Tacos</h3>
+                    <img src="images/tacos.jpg" alt="Mexican tacos">
+                    <p>Spicy beef tacos served with salsa and guacamole.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Muffins</h3>
+                    <img src="images/muffins.jpg" alt="Fresh muffins">
+                    <p>Assorted muffins: blueberry, chocolate chip, and banana nut.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Doughnuts</h3>
+                    <img src="images/doughnuts.jpg" alt="Glazed doughnuts">
+                    <p>Sweet, fluffy doughnuts with various glazes and toppings.</p>
+                </div>
             </div>
         </section>
+
+        <!-- Snacks -->
+        <section class="snack-section">
+            <h2>Snack Menu</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Candy Floss</h3>
+                    <img src="images/candy-floss.jpg" alt="Colorful candy floss">
+                    <p>Fluffy and sweet – a classic amusement park treat!</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Sweet Treats</h3>
+                    <img src="images/sweet-treats.jpg" alt="Assorted sweet treats">
+                    <p>Delicious chocolate bars, gummy bears, and more.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Popcorn</h3>
+                    <img src="images/popcorn.jpg" alt="Bucket of popcorn">
+                    <p>Freshly popped, buttery and crunchy – perfect for shows!</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Candy</h3>
+                    <img src="images/candy.jpg" alt="Colorful candy selection">
+                    <p>Choose from hard candies, chews, and lollipops.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Ice Cream</h3>
+                    <img src="images/ice-cream.jpg" alt="Sundae ice cream">
+                    <p>Cool off with our creamy cones and sundaes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refreshments -->
+        <section class="refreshments-section">
+            <h2>Refreshments</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Lemonade</h3>
+                    <img src="images/lemonade.jpg" alt="Glass of lemonade">
+                    <p>Chilled, zesty lemonade – a refreshing favorite.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Soft Drinks</h3>
+                    <img src="images/drinks.jpg" alt="Assorted soft drinks">
+                    <p>Coca-Cola, Fanta, Sprite, and more available cold.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Rainbow Slushies</h3>
+                    <img src="images/rainbow-slushies.jpg" alt="Colorful slushie drinks">
+                    <p>Frozen fruity slushies in every color imaginable!</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Coffee</h3>
+                    <img src="images/coffee.jpg" alt="Cup of coffee">
+                    <p>Grab a fresh cup of brewed coffee or cappuccino.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Content -->
+        <section class="extras">
+            <h2>Dietary Options</h2>
+            <p>We offer vegetarian, vegan, gluten-free, and nut-free options. Ask our staff for details or check our allergen menu at the kiosk.</p>
+
+            <h2>Special Offers</h2>
+            <p>Get a free drink with any combo meal! Check our boards for daily deals.</p>
+
+            <h2>Birthday Party Catering</h2>
+            <p>Hosting a party? We provide full catering packages with cake, drinks, snacks, and exclusive seating.</p>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Fun Adventure Amusement Park | Food Court Hotline: (555) 123-4567</p>
+    </footer>
 </body>
 </html>

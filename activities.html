@@ -1,96 +1,105 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Fun Adventure Amusement Park</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            .activity-grid{
-                display: grid;
-                grid-template-columns: repeat(5,1fr);
-                grid-gap: 10px;
-                padding: 10px;
-            }
-            a{
-                text-decoration: none;
-            }
-            .activity-grid a:hover{
-                border: #39c14b solid thin;
-                border-radius: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Welcome To Fun Adventure Amusement Park</h1>
-        </header>
-        <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Adventure Amusement Park</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fun Adventure Amusement Park</h1>
+        <nav class="nav">
             <ul>
-                <li> <a href="index.html">Home |</a> </li>
-                <li> <a href="park-info.html">Park Info |</a> </li>
-                <li> <a href="activities.html">Activities |</a> </li>
-                <li> <a href="food.html">Food |</a></li>
-                <li> <a href="contact.html">Contact Us |</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="park-info.html">Park Info</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
             </ul>
         </nav>
-        <main>
-            <section id="home-page">
-                <div class="home-page content" Featured Activities>
-                    <h1>Featured Activities</h1>
-                    <h3>Experience The Thrill</h3>
-                    <p>Your ultimate destination for fun and adventure</p>
-                </div>
-                <div class="adventure-image">
-                    <h3>Roller Coaster</h3>
-                    <img src="images/home-page.jpg" alt="Exciting Rollercoaster">
-                    <p>Full speed ahead</p>
-                </div>
-                    <div class="activitity-card">
-                        <h3>The Water Slide</h3>
-                        <img src="images/water slide.jpg" alt="activity 1">
-                    </div>
-                </div>
-                <div class="activitity-card">
-                    <h3>The Ferris Wheel</h3>
-                    <img src="images/ferris wheel.jpg" alt="activity 2">
-                    <p>Enjoy breath-taking panoramic views</p>
-                </div>
-                <div class="activitity-card">
-                    <h3>Horse Riding</h3>
-                    <img src="images/horse riding.jpg" alt="activity 3">
-                </div>
-                <div class="activitity-card">
-                    <h3>The Merry Go Round</h3>
-                    <img src="images/merry go round.jpg" alt="activity 4">
-                </div>
-                <div class="activitity-card">
-                    <h3>Water Coaster</h3>
-                    <img src="images/water coaster.jpg" alt="activity 5">
-                </div>
-                <div class="activitity-card">
-                    <h3>vr simulations</h3>
-                    <img src="images/vr-simulations.jpg" alt="activity 6">
-                </div>
-                <div class="activitity-card">
-                    <h3>Swimming Pool</h3>
-                    <img src="images/swimming pool.jpg" alt="activity 7">
-                    <p>Its pool time!</p>
-                </div>
-                <div class="activitity-card">
-                    <h3>Swings</h3>
-                    <img src="images/swings.jpg" alt="activity 8">
-                    <p></p>
-                </div>
-                <div class="activitity-card">
-                    <h3>Face Painting</h3>
-                    <img src="images/face-painting.jpg" alt="activity 9">
-                </div>
-                <div class="activitity-card">
-                    <h3>Animal Petting</h3>
-                    <img src="images/animal-petting.jpg" alt="activity 10">
-                </div>
-            </section>
-            <a href="park-info.html" class="button">Learn more</a>
-        </main>
+    </header>
+
+    <main>
+        <section class="home-page-content">
+            <h2>Featured Activities</h2>
+            <h3>Experience The Thrill</h3>
+            <p>Your ultimate destination for fun and adventure.</p>
+        </section>
+
+        <section class="activity-grid">
+            <div class="activity-card">
+                <h3>Roller Coaster</h3>
+                <img src="images/home-page.jpg" alt="Exciting roller coaster ride">
+                <p>Full speed ahead!</p>
+            </div>
+            <div class="activity-card">
+                <h3>Water Slide</h3>
+                <img src="images/water-slide.jpg" alt="Water slide thrill">
+            </div>
+            <div class="activity-card">
+                <h3>Ferris Wheel</h3>
+                <img src="images/ferris-wheel.jpg" alt="Ferris wheel panoramic view">
+                <p>Enjoy breath-taking views from the top.</p>
+            </div>
+            <div class="activity-card">
+                <h3>Horse Riding</h3>
+                <img src="images/horse-riding.jpg" alt="Kids enjoying horse riding">
+            </div>
+            <div class="activity-card">
+                <h3>Merry-Go-Round</h3>
+                <img src="images/merry-go-round.jpg" alt="Classic merry-go-round ride">
+            </div>
+            <div class="activity-card">
+                <h3>Water Coaster</h3>
+                <img src="images/water-coaster.jpg" alt="Splashing on water coaster">
+            </div>
+            <div class="activity-card">
+                <h3>VR Simulations</h3>
+                <img src="images/vr-simulations.jpg" alt="Virtual reality games">
+            </div>
+            <div class="activity-card">
+                <h3>Swimming Pool</h3>
+                <img src="images/swimming-pool.jpg" alt="Children enjoying in swimming pool">
+                <p>It’s pool time!</p>
+            </div>
+            <div class="activity-card">
+                <h3>Swings</h3>
+                <img src="images/swings.jpg" alt="Kids swinging in the park">
+            </div>
+            <div class="activity-card">
+                <h3>Face Painting</h3>
+                <img src="images/face-painting.jpg" alt="Colorful face painting">
+            </div>
+            <div class="activity-card">
+                <h3>Animal Petting</h3>
+                <img src="images/animal-petting.jpg" alt="Children petting animals">
+            </div>
+        </section>
+
+        <section class="info-box">
+            <h2>Park Hours</h2>
+            <p>Open Daily: 9:00 AM - 9:00 PM</p>
+            <p>Special Events every weekend!</p>
+        </section>
+
+        <section class="info-box">
+            <h2>Tickets</h2>
+            <p>Adults: $30 | Children: $20 | Seniors: $15</p>
+            <p><a href="tickets.html" class="button">Buy Tickets</a></p>
+        </section>
+
+        <section class="testimonial">
+            <h2>What Our Visitors Say</h2>
+            <p>“Absolutely the best day out we’ve had in years!” - Jessica M.</p>
+            <p>“My kids can’t stop talking about the VR experience!” - Ryan L.</p>
+        </section>
+
+        <a href="park-info.html" class="button">Learn More</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fun Adventure Amusement Park. All rights reserved.</p>
+    </footer>
+</body>
 </html>

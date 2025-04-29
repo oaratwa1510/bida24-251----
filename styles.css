@@ -1,78 +1,199 @@
-/* Container that holds the whole page */
-body {
-    font-family: sans-serif, Arial;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-    list-style: none;
-    box-sizing: border-box;
-    color: #999;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures the body takes full height */
-}
-
-/* Fixed navigation bar on the left */
+/* Side navigation bar */
 .nav {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
+    position: fixed; /* Fixes the navigation bar to the side */
     top: 0;
     left: 0;
-    width: 200px; /* Fixed width for the navigation bar */
-    background-color: #18126a;
+    width: 200px; /* Width of the navigation bar */
     height: 100vh; /* Full viewport height */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    z-index: 10;
+    background-color: #1a1a2e; /* Dark blue background */
+    padding: 20px 0; /* Padding for spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensures the nav stays on top */
 }
 
-/* Navigation links */
-.nav a {
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    background-color: brown;
-    border-radius: 10px;
-    margin: 10px 0;
-    font-weight: bold;
+.nav ul {
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    gap: 15px; /* Space between links */
+}
+
+.nav li {
     display: block;
-    text-align: center;
 }
 
-/* Main content area */
-.main-content {
-    margin-left: 220px; /* Ensure content is not hidden behind the nav */
+.nav a {
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #16213e; /* Slightly lighter blue for links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav a:hover {
+    background-color: #0f3460; /* Lighter blue for hover effect */
+}
+
+/* Main content styling */
+main {
+    margin-left: 220px; /* Adds space for the side navigation */
     padding: 20px;
-    flex-grow: 1; /* Allow content area to grow and take remaining space */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
-/* Grid container for images */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 10px; /* Space between grid items */
-}
-
-/* Grid item styling */
-.grid-item img {
-    width: 100%; /* Makes the image fill its grid cell */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Prevents extra space below the image */
-    border-radius: 8px;
-}
-
-.grid-item h3 {
-    text-align: center;
-    padding-top: 10px;
+/* Header styling */
+header {
+    margin-left: 220px; /* Aligns header with the main content */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Footer styling */
-.footer {
-    background-color: #18126a;
-    color: white;
+footer {
+    margin-left: 220px; /* Aligns footer with the main content */
+    padding: 20px;
+    background-color: #1a1a2e; /* Matches navigation bar color */
+    color: #ffffff; /* White text for contrast */
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+}
+/* Reset some default browser styles */
+body, h1, h2, p, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
 }
 
+body {
+    background: #f4faff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav.nav ul li {
+    margin: 0 15px;
+}
+
+nav.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#feedback-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4CAF50;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#rating-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+#rating-options label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

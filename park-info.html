@@ -4,101 +4,141 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fun Adventure Amusement Park</title>
-        <style>
-            body{
-                font-family: sans-serif;
-                margin: 20px;
-            }
-            .park-info-section{
-                margin-bottom: 30px;
-                border-bottom: 1px solid #eee;
-                padding-bottom: 20px;
-            }
-            .park-info-section h2{
-                color: #369;
-            }
-            .park-details dt{
-                font-weight: bold;
-                margin-bottom: 5px;
-            }
-            .park-details dd{
-                margin-left: 20px;
-                margin-bottom: 10px;
-            }
-            .map-container{
-                width: 100%;
-                height: 300px; /*Adjust as needed*/
-                border: 1px solid #ccc;
-            }
-            .activity{
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-top: 20px;
-            }
-            .activity img{
-                width: calc(33%-10px); /*Adjust for different numbers of columns*/
-                height: auto;
-                border: 1px solid #ddd;
-                box-sizing: border-box;
-            }
-            /*Basic styling-feel free to customize with your CSS*/
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
             <h1>Welcome to Fun Adventure Amusement Park</h1>
-            <nav>
+            <nav class="nav">
                 <ul>
-                    <li> <a href="index.html">Home |</a> </li>
-                    <li> <a href="park-info.html">Park Info |</a> </li>
-                    <li> <a href="activities.html">Activities |</a> </li>
-                    <li> <a href="food.html">Food |</a></li>
-                    <li> <a href="contact.html">Contact Us |</a> </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="park-info.html">Park Info</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
                 </ul>
             </nav>
             <p>Discover the beauty and adventure that awaits you!</p>
         </header>
         <main>
-            <section id="overview" class="park-infor-section">
+            <section id="overview" class="park-info-section">
                 <h2>Park Overview</h2>
                 <p>
-                    Our Fun Advenyure Amusement Park was first built in the early 2020's just right along the A1 road for easy accessiblity by our users.<br>It is dedicated to bringing laughter and joy to your littles one's and it provides a space to relax and enjoy with your family and friends.<br>Come join us and enjoy the variety of recreational activities it has to offer.
+                    Fun Adventure Amusement Park, established in the early 2020s, is located along the bustling A1 road, ensuring convenient access for visitors from all around the region. The park was created with the goal of providing endless entertainment and joyous experiences for families, children, and thrill-seekers alike. From exhilarating rides to tranquil spots for relaxation, Fun Adventure Amusement Park offers something for everyone.
+                </p>
+                <p>
+                    The park's mission is to provide a safe, family-friendly environment where visitors can make lasting memories. Whether you're looking to have a fun-filled day of adventure or simply want a relaxing escape, we offer a wide range of attractions to satisfy all your desires. We pride ourselves in our commitment to excellence, ensuring that every visitor leaves with a smile.
                 </p>
             </section>
+
             <section id="location" class="park-info-section">
                 <h2>Location and Directions</h2>
                 <div class="park-details"></div>
-                <dt>Address:</dt>
-                <dd>Plot 34256 Along the A1 road</dd>
-                <dt>Directions:</dt>
-                <dd>From Gaborone,go along the A1 road and take a turn on your left into Phakalane theen go strainght and turn right after the circle.<br>The park entrance will be on your left.</dd>
-                <dt>Public Transportation:</dt>
-                <dd>Combies that go to Phakalane pass right beside the park</dd>
+                <dl>
+                    <dt>Address:</dt>
+                    <dd>Plot 34256 Along the A1 road, Phakalane, Botswana</dd>
+                    <dt>Directions:</dt>
+                    <dd>From Gaborone, take the A1 road heading north. Turn left into Phakalane, continue straight, and then take a right turn after the circle. The park entrance will be on your left. It’s a straightforward route, ensuring ease of travel for all visitors.</dd>
+                    <dt>Public Transportation:</dt>
+                    <dd>Public transport is easily accessible with combies passing right next to the park. You can hop on a combi that travels towards Phakalane, and you'll find yourself just a short walk away from the entrance. For your convenience, the area is well-served by various local bus services.</dd>
+                    <dt>Parking:</dt>
+                    <dd>We offer ample parking space for both small and large vehicles. Parking is free for all visitors, ensuring that your arrival is as smooth and hassle-free as possible.</dd>
+                </dl>
             </section>
+
             <section id="hours" class="park-info-section">
                 <h2>Hours of Operation</h2>
                 <dl class="park-details">
                     <dt>General Hours:</dt>
-                    <dd>Monday-Friday:9:00 AM-4:00 PM <br>Saturdays & Sundays: 8:00 AM-6:00 PM</dd>
+                    <dd>Monday - Friday: 9:00 AM - 4:00 PM</dd>
+                    <dd>Saturday & Sunday: 8:00 AM - 6:00 PM</dd>
+                    <dt>Special Hours:</dt>
+                    <dd>During holidays and peak seasons, the park may extend its hours to accommodate the increased number of visitors. Stay updated with our schedule through our website or by calling the park directly.</dd>
+                    <dt>Holiday Schedule:</dt>
+                    <dd>On national holidays and during peak vacation periods, the park is often open for extended hours to give you more time to enjoy everything we have to offer. Be sure to check our events calendar for updates on holiday hours.</dd>
                 </dl>
             </section>
+
+            <section id="activities" class="park-info-section">
+                <h2>Exciting Activities for All Ages</h2>
+                <p>
+                    At Fun Adventure Amusement Park, we offer a diverse range of activities tailored to every age group and interest. Whether you're an adrenaline junkie looking for thrilling rides or someone who prefers a slower pace, our park has something for everyone.
+                </p>
+                <h3>Thrilling Rides</h3>
+                <p>
+                    The park is home to a variety of heart-racing rides, including roller coasters, bumper cars, and spinning teacups. The ‘Thunder Roller Coaster’ is a favorite among thrill-seekers, offering high-speed twists and turns that are sure to get your heart racing.
+                </p>
+                <h3>Gentle Rides and Attractions</h3>
+                <p>
+                    For those looking for something more laid-back, our gentle rides such as the Ferris wheel and carousel are perfect. These classic attractions are designed for the whole family to enjoy, offering breathtaking views of the park.
+                </p>
+                <h3>Water Fun</h3>
+                <p>
+                    Beat the heat with our water-themed attractions. The ‘Splashdown’ water slide and the ‘Water Kingdom’ pool area provide hours of wet and wild fun. Families can enjoy relaxing in the lazy river or get drenched on the water-based rides.
+                </p>
+                <h3>Live Entertainment</h3>
+                <p>
+                    Every weekend, the park features live entertainment, including performances by local musicians, magicians, and dancers. These performances take place in the central plaza, so be sure to check out the schedule and catch a show during your visit.
+                </p>
+            </section>
+
+            <section id="food" class="park-info-section">
+                <h2>Delicious Food and Dining</h2>
+                <p>
+                    No adventure is complete without a delicious meal to refuel! At Fun Adventure Amusement Park, we offer a wide variety of dining options to satisfy every palate. From quick bites to sit-down meals, you’ll find something to suit your tastes.
+                </p>
+                <h3>Food Court</h3>
+                <p>
+                    Our food court offers a range of options, including fast food favorites like burgers, fries, and pizza, as well as healthier options such as salads and fresh fruit. The food court is centrally located, so it’s easy to grab a bite between rides.
+                </p>
+                <h3>Café and Snack Stalls</h3>
+                <p>
+                    For those in need of a lighter snack, we have several cafés and snack stalls scattered throughout the park. Whether you’re craving ice cream, cotton candy, or a fresh smoothie, you’ll find plenty of delicious treats to enjoy while you explore.
+                </p>
+            </section>
+
+            <section id="events" class="park-info-section">
+                <h2>Special Events and Promotions</h2>
+                <p>
+                    Throughout the year, we host a variety of special events and promotions to make your visit even more memorable. From seasonal festivals to themed days, there's always something exciting happening at Fun Adventure Amusement Park!
+                </p>
+                <h3>Annual Summer Festival</h3>
+                <p>
+                    Our Summer Festival, held every year in July, is one of the park’s biggest events. It features live music, food trucks, special performances, and unique themed activities. It’s the perfect way to spend a summer day with friends and family.
+                </p>
+                <h3>Discounted Tickets</h3>
+                <p>
+                    Keep an eye on our website for special promotions and discounted ticket offers. We often run seasonal promotions that allow you to experience all the fun at a lower price. Our “Family Day” deals are perfect for large groups looking to enjoy the park together.
+                </p>
+            </section>
+
+            <section id="testimonials" class="park-info-section">
+                <h2>What Our Visitors Say</h2>
+                <p>Don't just take our word for it—hear what our visitors have to say about their experiences at Fun Adventure Amusement Park:</p>
+                <blockquote>
+                    "My family and I had the best time at the park! The kids loved the roller coasters, and we all had fun watching the live performances. The staff were so friendly and made our visit unforgettable. We’ll definitely be back soon!" – Sarah M., Gaborone
+                </blockquote>
+                <blockquote>
+                    "I came with a group of friends and we spent the whole day enjoying the rides. The food was great, and we even managed to catch the fireworks show in the evening. Highly recommend it!" – Jonathan K., Phakalane
+                </blockquote>
+            </section>
+
             <section id="contact" class="park-info-section">
                 <h2>Contact Us</h2>
-                <p>We'd love to hear from you!</p>
+                <p>We’d love to hear from you! Whether you have a question, feedback, or just want to share your experience, feel free to reach out to us.</p>
                 <dl class="park-details">
                     <dt>Phone:</dt>
-                    <dd>+267 76453242/+267 77432198</dd>
+                    <dd>+267 76453242 / +267 77432198</dd>
                     <dt>Email:</dt>
-                    <dd><a href="mailto:fun-adventure-amusement-park@gmail.com"></a></dd>
+                    <dd><a href="mailto:fun-adventure-amusement-park@gmail.com">fun-adventure-amusement-park@gmail.com</a></dd>
+                    <dt>Follow Us:</dt>
+                    <dd>Stay updated with the latest news and events by following us on our social media channels!</dd>
                 </dl>
             </section>
         </main>
 
         <footer>
-            <p>
-                &copy; 2025 Fun Adventure Amusement Park.All rights reserved.
-            </p>
+            <p>&copy; 2025 Fun Adventure Amusement Park. All rights reserved.</p>
         </footer>
     </body>
 </html>

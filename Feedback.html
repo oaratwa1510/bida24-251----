@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Fun Adventure Amusement Park</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>We Value Your Feedback!</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="park-info.html">Park Info</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <p>Help us make your experience even better by sharing your thoughts with us.</p>
+    </header>
+
+    <main>
+        <section id="feedback-section">
+            <h2>We'd Love to Hear About Your Experience</h2>
+            <p>Your feedback is important to us! Please fill out the form below to share your experience and any suggestions you might have. Your opinions help us improve and provide the best possible service to our visitors.</p>
+
+            <form action="submit_feedback.php" method="POST" id="feedback-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Full Name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Visit Experience</legend>
+                    <label for="visit-date">Date of Visit:</label>
+                    <input type="date" id="visit-date" name="visit-date" required>
+
+                    <label for="rating">How would you rate your overall experience?</label>
+                    <div id="rating-options">
+                        <input type="radio" id="rating-excellent" name="rating" value="Excellent" required>
+                        <label for="rating-excellent">Excellent</label>
+
+                        <input type="radio" id="rating-good" name="rating" value="Good">
+                        <label for="rating-good">Good</label>
+
+                        <input type="radio" id="rating-average" name="rating" value="Average">
+                        <label for="rating-average">Average</label>
+
+                        <input type="radio" id="rating-poor" name="rating" value="Poor">
+                        <label for="rating-poor">Poor</label>
+                    </div>
+
+                    <label for="comments">What did you enjoy the most during your visit?</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your favorite experiences..." required></textarea>
+
+                    <label for="suggestions">Any suggestions for improvement?</label>
+                    <textarea id="suggestions" name="suggestions" rows="4" placeholder="We would love to hear your ideas!"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Stay Updated</legend>
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+                        Yes, I would like to receive updates about the park's events, promotions, and news.
+                    </label>
+                </fieldset>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fun Adventure Amusement Park. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
