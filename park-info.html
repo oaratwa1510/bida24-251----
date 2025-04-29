@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fun Adventure Amusement Park</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                margin: 20px;
+            }
+            .park-info-section{
+                margin-bottom: 30px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 20px;
+            }
+            .park-info-section h2{
+                color: #369;
+            }
+            .park-details dt{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .park-details dd{
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+            .map-container{
+                width: 100%;
+                height: 300px; /*Adjust as needed*/
+                border: 1px solid #ccc;
+            }
+            .activity{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            .activity img{
+                width: calc(33%-10px); /*Adjust for different numbers of columns*/
+                height: auto;
+                border: 1px solid #ddd;
+                box-sizing: border-box;
+            }
+            /*Basic styling-feel free to customize with your CSS*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Fun Adventure Amusement Park</h1>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home |</a> </li>
+                    <li> <a href="park-info.html">Park Info |</a> </li>
+                    <li> <a href="activities.html">Activities |</a> </li>
+                    <li> <a href="food.html">Food |</a></li>
+                    <li> <a href="contact.html">Contact Us |</a> </li>
+                </ul>
+            </nav>
+            <p>Discover the beauty and adventure that awaits you!</p>
+        </header>
+        <main>
+            <section id="overview" class="park-infor-section">
+                <h2>Park Overview</h2>
+                <p>
+                    Our Fun Advenyure Amusement Park was first built in the early 2020's just right along the A1 road for easy accessiblity by our users.<br>It is dedicated to bringing laughter and joy to your littles one's and it provides a space to relax and enjoy with your family and friends.<br>Come join us and enjoy the variety of recreational activities it has to offer.
+                </p>
+            </section>
+            <section id="location" class="park-info-section">
+                <h2>Location and Directions</h2>
+                <div class="park-details"></div>
+                <dt>Address:</dt>
+                <dd>Plot 34256 Along the A1 road</dd>
+                <dt>Directions:</dt>
+                <dd>From Gaborone,go along the A1 road and take a turn on your left into Phakalane theen go strainght and turn right after the circle.<br>The park entrance will be on your left.</dd>
+                <dt>Public Transportation:</dt>
+                <dd>Combies that go to Phakalane pass right beside the park</dd>
+            </section>
+            <section id="hours" class="park-info-section">
+                <h2>Hours of Operation</h2>
+                <dl class="park-details">
+                    <dt>General Hours:</dt>
+                    <dd>Monday-Friday:9:00 AM-4:00 PM <br>Saturdays & Sundays: 8:00 AM-6:00 PM</dd>
+                </dl>
+            </section>
+            <section id="contact" class="park-info-section">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you!</p>
+                <dl class="park-details">
+                    <dt>Phone:</dt>
+                    <dd>+267 76453242/+267 77432198</dd>
+                    <dt>Email:</dt>
+                    <dd><a href="mailto:fun-adventure-amusement-park@gmail.com"></a></dd>
+                </dl>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2025 Fun Adventure Amusement Park.All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>
