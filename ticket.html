@@ -1,103 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fun Adventure Amusement Park - Book Tickets</title>
-  <!-- W3Schools Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fun Adventure Amusement Park - Your Ultimate Fun Destination</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Fun Adventure Amusement Park</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="park-info.html">Park Info</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a href="ticket.html">Tickets</a></li>
+                </ul>
+            </nav>
+            <p>Your ultimate destination for adventure, relaxation, and fun-filled memories!</p>
+        </header>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>Welcome to Fun Adventure Amusement Park</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="park-info.html">Park Info</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="food.html">Food</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Carousel -->
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/rollercoaster.jpg" class="d-block w-100" alt="Roller Coaster">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Roller Coaster</h5>
-          <p>Experience the thrill of our high-speed roller coaster!</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/waterslide.jpg" class="d-block w-100" alt="Water Slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Water Slide</h5>
-          <p>Cool off with our exciting water slide adventure.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/ferriswheel.jpg" class="d-block w-100" alt="Ferris Wheel">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Ferris Wheel</h5>
-          <p>Enjoy panoramic views from our towering Ferris wheel.</p>
+<!-- Ticket Cards -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Book Your Tickets</h2>
+  <div class="row g-4">
+    <!-- Kids Package -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/ticket.png" class="card-img-top" alt="Kids Ticket">
+        <div class="card-body">
+          <h5 class="card-title">Kids Package</h5>
+          <p class="card-text">Perfect for children under 12. Includes access to all kids' attractions.</p>
+          <p class="card-text"><strong>Price:</strong> $20</p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
 
-  <!-- Ticket Cards -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Book Your Tickets</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/kidsticket.jpg" class="card-img-top" alt="Kids Ticket">
-          <div class="card-body">
-            <h5 class="card-title">Kids Package</h5>
-            <p class="card-text">Perfect for children under 12. Includes access to all kids' attractions.</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketModal" data-ticket="Kids">Buy Now</button>
-          </div>
+    <!-- Adult Package -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/adult.jpeg" class="card-img-top" alt="Adult Ticket">
+        <div class="card-body">
+          <h5 class="card-title">Adult Package</h5>
+          <p class="card-text">Access to all attractions for adults. Enjoy the thrill!</p>
+          <p class="card-text"><strong>Price:</strong> $30</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/adultticket.jpg" class="card-img-top" alt="Adult Ticket">
-          <div class="card-body">
-            <h5 class="card-title">Adult Package</h5>
-            <p class="card-text">Access to all attractions for adults. Enjoy the thrill!</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketModal" data-ticket="Adult">Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/familyticket.jpg" class="card-img-top" alt="Family Ticket">
-          <div class="card-body">
-            <h5 class="card-title">Family Package</h5>
-            <p class="card-text">Special package for 2 adults and 2 children. Fun for the whole family!</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketModal" data-ticket="Family">Buy Now</button>
-          </div>
+    </div>
+
+    <!-- Family Package -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/family.jpeg" class="card-img-top" alt="Family Ticket">
+        <div class="card-body">
+          <h5 class="card-title">Family Package</h5>
+          <p class="card-text">Special package for 2 adults and 2 children. Fun for the whole family!</p>
+          <p class="card-text"><strong>Price:</strong> $60</p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   <!-- Ticket Modal -->
   <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
@@ -133,16 +99,16 @@
         <h4>Follow Us for Dino-Mite Updates!</h4>
         <div class="social-icons my-3">
             <a href="https://www.facebook.com/JurassicPark" target="_blank" aria-label="Facebook">
-                <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+                <img src="images/Faceboook.jpeg" alt="Facebook" class="social-icon">
             </a>
             <a href="https://www.instagram.com/jurassicworld" target="_blank" aria-label="Instagram">
-                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+                <img src="images/Insta.jpeg" alt="Instagram" class="social-icon">
             </a>
             <a href="https://twitter.com/JurassicWorld" target="_blank" aria-label="Twitter">
-                <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+                <img src="images/Twitter.jpeg" alt="Twitter" class="social-icon">
             </a>
             <a href="https://www.youtube.com/c/jurassicworld" target="_blank" aria-label="YouTube">
-                <img src="images/youtube-icon.png" alt="YouTube" class="social-icon">
+                <img src="images/Youtube.jpeg" alt="YouTube" class="social-icon">
             </a>
         </div>
 
@@ -180,3 +146,4 @@
   </script>
 </body>
 </html>
+``` 
