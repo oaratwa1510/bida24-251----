@@ -269,6 +269,68 @@ section h2 {
     margin-top: 10px;
 }
 
+/* Activities Section */
+#activities-section {
+    margin-top: 40px;
+}
+
+#activities-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 30%; /* Images take 30% of the row */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 2; /* Content takes 70% of the row */
+}
+
+.content h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     main {
