@@ -4,101 +4,83 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fun Adventure Amusement Park</title>
+        <!-- W3.CSS for responsiveness -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h1>Welcome to Fun Adventure Amusement Park</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="park-info.html">Park Info</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="food.html">Food</a></li>
-                    <li><a href="Feedback.html">Feedback</a></li>
+        <header class="w3-container w3-dark-gray w3-padding-16">
+            <h1 class="w3-center">Welcome to Fun Adventure Amusement Park</h1>
+            <nav class="nav w3-center w3-margin-top">
+                <ul class="w3-bar">
+                    <li class="w3-bar-item"><a href="index.html" class="w3-button w3-hover-light-gray">Home</a></li>
+                    <li class="w3-bar-item"><a href="park-info.html" class="w3-button w3-hover-light-gray">Park Info</a></li>
+                    <li class="w3-bar-item"><a href="activities.html" class="w3-button w3-hover-light-gray">Activities</a></li>
+                    <li class="w3-bar-item"><a href="food.html" class="w3-button w3-hover-light-gray">Food</a></li>
+                    <li class="w3-bar-item"><a href="Feedback.html" class="w3-button w3-hover-light-gray">Feedback</a></li>
                 </ul>
             </nav>
-            <p>Discover the beauty and adventure that awaits you!</p>
+            <p class="w3-center w3-text-light-gray">Discover the beauty and adventure that awaits you!</p>
         </header>
-        <main>
-            <section id="overview" class="park-info-section">
-                <h2>Park Overview</h2>
+
+        <main class="w3-container">
+            <section id="overview" class="w3-margin-top w3-padding">
+            <h2 class="w3-center">Park Overview</h2>
+            <div class="w3-row w3-margin-top">
+                <div class="w3-col m5 w3-center w3-padding">
+                <div class="w3-card w3-padding-small">
+                    <img src="images/Overview.jpeg" alt="Park Overview" class="w3-image w3-round">
+                </div>
+                </div>
+                <div class="w3-col m7 w3-padding-large">
                 <p>
                     Fun Adventure Amusement Park, established in the early 2020s, is located along the bustling A1 road, ensuring convenient access for visitors from all around the region. The park was created with the goal of providing endless entertainment and joyous experiences for families, children, and thrill-seekers alike. From exhilarating rides to tranquil spots for relaxation, Fun Adventure Amusement Park offers something for everyone.
                 </p>
                 <p>
                     The park's mission is to provide a safe, family-friendly environment where visitors can make lasting memories. Whether you're looking to have a fun-filled day of adventure or simply want a relaxing escape, we offer a wide range of attractions to satisfy all your desires. We pride ourselves in our commitment to excellence, ensuring that every visitor leaves with a smile.
                 </p>
+                </div>
+            </div>
             </section>
 
-            <section id="location" class="park-info-section">
-                <h2>Location and Directions</h2>
-                <div class="park-details"></div>
-                <dl>
-                    <dt>Address:</dt>
-                    <dd>Plot 34256 Along the A1 road, Phakalane, Botswana</dd>
-                    <dt>Directions:</dt>
-                    <dd>From Gaborone, take the A1 road heading north. Turn left into Phakalane, continue straight, and then take a right turn after the circle. The park entrance will be on your left. It’s a straightforward route, ensuring ease of travel for all visitors.</dd>
-                    <dt>Public Transportation:</dt>
-                    <dd>Public transport is easily accessible with combies passing right next to the park. You can hop on a combi that travels towards Phakalane, and you'll find yourself just a short walk away from the entrance. For your convenience, the area is well-served by various local bus services.</dd>
-                    <dt>Parking:</dt>
-                    <dd>We offer ample parking space for both small and large vehicles. Parking is free for all visitors, ensuring that your arrival is as smooth and hassle-free as possible.</dd>
-                </dl>
+            <section id="location" class="w3-margin-top w3-padding">
+                <h2 class="w3-center">Location and Directions</h2>
+                <div class="w3-row">
+                    <div class="w3-col m4 w3-center">
+                        <div class="w3-card w3-padding-small">
+                            <img src="images/Location.png" alt="Location" class="w3-image w3-round">
+                        </div>
+                    </div>
+                    <div class="w3-col m8">
+                        <dl class="w3-margin-top">
+                            <dt><strong>Address:</strong></dt>
+                            <dd>Plot 34256 Along the A1 road, Phakalane, Botswana</dd>
+                            <dt><strong>Directions:</strong></dt>
+                            <dd>From Gaborone, take the A1 road heading north. Turn left into Phakalane, continue straight, and then take a right turn after the circle. The park entrance will be on your left. It’s a straightforward route, ensuring ease of travel for all visitors.</dd>
+                            <dt><strong>Public Transportation:</strong></dt>
+                            <dd>Public transport is easily accessible with combies passing right next to the park. You can hop on a combi that travels towards Phakalane, and you'll find yourself just a short walk away from the entrance. For your convenience, the area is well-served by various local bus services.</dd>
+                            <dt><strong>Parking:</strong></dt>
+                            <dd>We offer ample parking space for both small and large vehicles. Parking is free for all visitors, ensuring that your arrival is as smooth and hassle-free as possible.</dd>
+                        </dl>
+                    </div>
+                </div>
             </section>
 
-            <section id="hours" class="park-info-section">
-                <h2>Hours of Operation</h2>
-                <dl class="park-details">
-                    <dt>General Hours:</dt>
+            <section id="hours" class="w3-margin-top w3-padding">
+                <h2 class="w3-center">Hours of Operation</h2>
+                <dl class="w3-margin-top">
+                    <dt><strong>General Hours:</strong></dt>
                     <dd>Monday - Friday: 9:00 AM - 4:00 PM</dd>
                     <dd>Saturday & Sunday: 8:00 AM - 6:00 PM</dd>
-                    <dt>Special Hours:</dt>
+                    <dt><strong>Special Hours:</strong></dt>
                     <dd>During holidays and peak seasons, the park may extend its hours to accommodate the increased number of visitors. Stay updated with our schedule through our website or by calling the park directly.</dd>
-                    <dt>Holiday Schedule:</dt>
+                    <dt><strong>Holiday Schedule:</strong></dt>
                     <dd>On national holidays and during peak vacation periods, the park is often open for extended hours to give you more time to enjoy everything we have to offer. Be sure to check our events calendar for updates on holiday hours.</dd>
                 </dl>
             </section>
 
-            <section id="activities" class="park-info-section">
-                <h2>Exciting Activities for All Ages</h2>
-                <p>
-                    At Fun Adventure Amusement Park, we offer a diverse range of activities tailored to every age group and interest. Whether you're an adrenaline junkie looking for thrilling rides or someone who prefers a slower pace, our park has something for everyone.
-                </p>
-                <h3>Thrilling Rides</h3>
-                <p>
-                    The park is home to a variety of heart-racing rides, including roller coasters, bumper cars, and spinning teacups. The ‘Thunder Roller Coaster’ is a favorite among thrill-seekers, offering high-speed twists and turns that are sure to get your heart racing.
-                </p>
-                <h3>Gentle Rides and Attractions</h3>
-                <p>
-                    For those looking for something more laid-back, our gentle rides such as the Ferris wheel and carousel are perfect. These classic attractions are designed for the whole family to enjoy, offering breathtaking views of the park.
-                </p>
-                <h3>Water Fun</h3>
-                <p>
-                    Beat the heat with our water-themed attractions. The ‘Splashdown’ water slide and the ‘Water Kingdom’ pool area provide hours of wet and wild fun. Families can enjoy relaxing in the lazy river or get drenched on the water-based rides.
-                </p>
-                <h3>Live Entertainment</h3>
-                <p>
-                    Every weekend, the park features live entertainment, including performances by local musicians, magicians, and dancers. These performances take place in the central plaza, so be sure to check out the schedule and catch a show during your visit.
-                </p>
-            </section>
-
-            <section id="food" class="park-info-section">
-                <h2>Delicious Food and Dining</h2>
-                <p>
-                    No adventure is complete without a delicious meal to refuel! At Fun Adventure Amusement Park, we offer a wide variety of dining options to satisfy every palate. From quick bites to sit-down meals, you’ll find something to suit your tastes.
-                </p>
-                <h3>Food Court</h3>
-                <p>
-                    Our food court offers a range of options, including fast food favorites like burgers, fries, and pizza, as well as healthier options such as salads and fresh fruit. The food court is centrally located, so it’s easy to grab a bite between rides.
-                </p>
-                <h3>Café and Snack Stalls</h3>
-                <p>
-                    For those in need of a lighter snack, we have several cafés and snack stalls scattered throughout the park. Whether you’re craving ice cream, cotton candy, or a fresh smoothie, you’ll find plenty of delicious treats to enjoy while you explore.
-                </p>
-            </section>
-
-            <section id="events" class="park-info-section">
-                <h2>Special Events and Promotions</h2>
+            <section id="events" class="w3-margin-top w3-padding">
+                <h2 class="w3-center">Special Events and Promotions</h2>
                 <p>
                     Throughout the year, we host a variety of special events and promotions to make your visit even more memorable. From seasonal festivals to themed days, there's always something exciting happening at Fun Adventure Amusement Park!
                 </p>
@@ -112,58 +94,53 @@
                 </p>
             </section>
 
-            <section id="testimonials" class="park-info-section">
-                <h2>What Our Visitors Say</h2>
+            <section id="testimonials" class="w3-margin-top w3-padding">
+                <h2 class="w3-center">What Our Visitors Say</h2>
                 <p>Don't just take our word for it—hear what our visitors have to say about their experiences at Fun Adventure Amusement Park:</p>
-                <blockquote>
+                <blockquote class="w3-panel w3-leftbar w3-light-gray">
                     "My family and I had the best time at the park! The kids loved the roller coasters, and we all had fun watching the live performances. The staff were so friendly and made our visit unforgettable. We’ll definitely be back soon!" – Sarah M., Gaborone
                 </blockquote>
-                <blockquote>
+                <blockquote class="w3-panel w3-leftbar w3-light-gray">
                     "I came with a group of friends and we spent the whole day enjoying the rides. The food was great, and we even managed to catch the fireworks show in the evening. Highly recommend it!" – Jonathan K., Phakalane
                 </blockquote>
             </section>
 
-            <section id="contact" class="park-info-section">
-                <h2>Contact Us</h2>
+            <section id="contact" class="w3-margin-top w3-padding">
+                <h2 class="w3-center">Contact Us</h2>
                 <p>We’d love to hear from you! Whether you have a question, feedback, or just want to share your experience, feel free to reach out to us.</p>
-                <dl class="park-details">
-                    <dt>Phone:</dt>
+                <dl class="w3-margin-top">
+                    <dt><strong>Phone:</strong></dt>
                     <dd>+267 76453242 / +267 77432198</dd>
-                    <dt>Email:</dt>
+                    <dt><strong>Email:</strong></dt>
                     <dd><a href="mailto:fun-adventure-amusement-park@gmail.com">fun-adventure-amusement-park@gmail.com</a></dd>
-                    <dt>Follow Us:</dt>
+                    <dt><strong>Follow Us:</strong></dt>
                     <dd>Stay updated with the latest news and events by following us on our social media channels!</dd>
                 </dl>
             </section>
         </main>
 
-        <footer class="footer-section">
-            <div class="container text-center py-4">
-                <h4>Follow Us for Dino-Mite Updates!</h4>
-                <div class="social-icons my-3">
-                    <a href="https://www.facebook.com/JurassicPark" target="_blank" aria-label="Facebook">
-                        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
-                    </a>
-                    <a href="https://www.instagram.com/jurassicworld" target="_blank" aria-label="Instagram">
-                        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
-                    </a>
-                    <a href="https://twitter.com/JurassicWorld" target="_blank" aria-label="Twitter">
-                        <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
-                    </a>
-                    <a href="https://www.youtube.com/c/jurassicworld" target="_blank" aria-label="YouTube">
-                        <img src="images/youtube-icon.png" alt="YouTube" class="social-icon">
-                    </a>
-                </div>
-        
-                <div class="footer-links">
-                    <a href="terms.html">Terms of Service</a> |
-                    <a href="privacy.html">Privacy Policy</a> |
-                    <a href="sitemap.html">Sitemap</a>
-                </div>
-        
-                <p class="mt-3">&copy; 2025 Fun Adventure Amusement Park. Inspired by Jurassic Park™. All rights reserved.</p>
+        <footer class="w3-container w3-dark-gray w3-padding-16">
+            <h4 class="w3-center">Follow Us for Dino-Mite Updates!</h4>
+            <div class="w3-center w3-margin-top">
+                <a href="https://www.facebook.com/JurassicPark" target="_blank" aria-label="Facebook">
+                    <img src="images/Faceboook.jpeg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/jurassicworld" target="_blank" aria-label="Instagram">
+                    <img src="images/Insta.jpeg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://twitter.com/JurassicWorld" target="_blank" aria-label="Twitter">
+                    <img src="images/Twitter.jpeg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/c/jurassicworld" target="_blank" aria-label="YouTube">
+                    <img src="images/Youtube.jpeg" alt="YouTube" class="social-icon">
+                </a>
             </div>
+            <div class="footer-links w3-center w3-margin-top">
+                <a href="terms.html">Terms of Service</a> |
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            <p class="w3-center">&copy; 2025 Fun Adventure Amusement Park. Inspired by Jurassic Park™. All rights reserved.</p>
         </footer>
-        
     </body>
 </html>
