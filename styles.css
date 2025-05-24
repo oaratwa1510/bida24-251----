@@ -357,16 +357,6 @@ body {
     padding: 0;
 }
 
-/* Header & Footer */
-header, footer {
-    background-color: #111;
-    color: #00ffe1;
-    text-align: center;
-    padding: 1rem 0;
-    border-bottom: 2px dashed #ff00cc;
-    border-top: 2px dashed #00ffe1;
-}
-
 header p {
     color: #aaa;
     font-size: 0.9rem;
